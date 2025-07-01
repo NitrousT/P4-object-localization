@@ -25,6 +25,6 @@ $ make
 * So my approach was to fuse both of these algorithms together because they complimented each other. This localization algorithm is a two step process. First coarse alignment with NDT: Since NDT is fast and can take on poor inital guess, we first do localization using NDT. For the second step, we use the aligned output provided by the NDT and feed it to the ICP algorithm. ICP takes in the NDT aligned scan and tries to optimize it even further. This two step process produces better overall aligned scan which results in better performance.
 
 ### Results
-The algorithm taking in 3 throttle steps is able to pass the test. Full video of a Demo-Run is available here: [👉 Click Here](https://youtu.be/m5QTFf8FRg0)
+The algorithm taking in 3 throttle steps is able to pass the test. Some improvements could be to implement SLAM which provides more robust performance. Full video of a Demo-Run is available here: [👉 Click Here](https://youtu.be/m5QTFf8FRg0)
 ![plot](./assets/Screenshot%202025-07-01%20at%202.17.54 PM.png)
 
