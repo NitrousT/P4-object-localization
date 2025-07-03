@@ -197,6 +197,7 @@ int main(){
 
 			Accuate(accuate, control);
 			vehicle->ApplyControl(control);
+			std::cout << "Current Throttle: " << control.throttle << std::endl;
 		}
 
   		viewer->spinOnce ();
